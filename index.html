@@ -211,13 +211,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 ]
     async function submit(result) {
         $('.book-list').empty();
-      // let response = await fetch('https://s3-ap-southeast-1.amazonaws.com/he-public-data/books8f8fe52.json', {
-      //   method: 'GET'
-      // });
-
-      // the server responds with confirmation and the image size
-     // let result = await response.json();
-     // console.log(result);
+      
    if(result.length>1){
       let sortResult = result.sort((a,b)=>{
         return b.average_rating-a.average_rating;
@@ -248,20 +242,6 @@ for (let i=0;i<result.length;i++) {
                         </div>
                     </div>
                 </div>`;
-
-  // set value of book from search lable
-  // // let book = $('searchByTitle').value();
-  // let book = 'Middlesex Borough (Images of America: New Jersey)';
-  // let sBook= result.find(function(e){
-  //   return e.title === book;
-  // })
-  // console.log(sBook)
-  // for(let j=0;j<result[i].average_rating;j++)
-  // {
-  //  htmlText += '<span class="fa fa-star checked"></span>';
-  // }
-
-}
 
 
 
